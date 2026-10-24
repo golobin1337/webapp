@@ -407,8 +407,8 @@
             </div>`).join("") || '<p class="dica">Nenhum PDF ainda.</p>'}
           <p class="dica">Edite o nome e clique fora para salvar.</p>
           <label class="upload" id="area-upload">
-            📄 Toque para enviar PDFs (pode escolher vários)
-            <input type="file" id="pdfs" accept="application/pdf" multiple>
+            📄 Toque para enviar PDFs ou planilhas (pode escolher vários)
+            <input type="file" id="pdfs" accept=".pdf,.xlsx,.xls" multiple>
           </label>
         </div>` : '<p class="dica" style="margin:0 16px">Depois de criar o produto, você poderá enviar os PDFs.</p>'}`;
   }
@@ -520,7 +520,7 @@
           const arquivo = await enviarArquivo("pdfs", file);
           ok(await sb.from("materiais").insert({
             produto_id: p.id,
-            titulo: file.name.replace(/\.pdf$/i, "").replace(/[_-]+/g, " ").trim(),
+            titulo: file.name.replace(/\.(pdf|xlsx?)$/i, "").replace(/[_-]+/g, " ").trim(),
             arquivo,
             ordem: base + i,
           }));

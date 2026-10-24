@@ -293,7 +293,7 @@
           </figure>
           <figure>
             <img src="img/passo2.webp" alt="Toque em Adicionar à Tela de Início" loading="lazy">
-            <figcaption><b>Passo 2:</b> toque em “Adicionar à Tela de Início”.</figcaption>
+            <figcaption><b>Passo 2:</b> clique em “Ver mais” e depois em “Adicionar à Tela de Início”.</figcaption>
           </figure>
 
           <h3>🤖 Android</h3>

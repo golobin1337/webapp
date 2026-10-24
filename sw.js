@@ -1,6 +1,6 @@
 // Guarda os arquivos do app para abrir rápido e funcionar com internet ruim.
 // Ao mudar arquivos do app, troque a versão para forçar atualização.
-const CACHE = "materiais-v9";
+const CACHE = "materiais-v10";
 const BASE = ["./", "index.html", "style.css", "app.js", "config.js", "manifest.json", "img/logo.jpg"];
 
 self.addEventListener("install", (e) => {

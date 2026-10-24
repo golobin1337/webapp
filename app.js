@@ -270,16 +270,37 @@
 
     sobre() {
       const liberados = dados.produtos.filter((p) => p.liberado).length;
+      // Já aberto como app instalado: o tutorial de instalação não faz sentido.
+      const instalado = matchMedia("(display-mode: standalone)").matches || navigator.standalone === true;
       return `
         <div class="card-texto">
           <h2>${esc(dados.nome || "Minha conta")}</h2>
           <p class="texto-suave">${esc(ler(EMAIL_KEY, ""))}</p>
           ${modoTeste ? '<p class="erro">Modo de teste: configure o Supabase no config.js para usar os alunos e PDFs reais.</p>' : ""}
           <p>Você tem <b>${liberados}</b> produto(s) liberado(s), com <b>${todos.length}</b> materiais.</p>
-          <p><b>Dica:</b> instale o app no celular. No iPhone, toque em Compartilhar → "Adicionar à Tela de Início". No Android, toque nos ⋮ → "Instalar app".</p>
           ${cfg.suporte ? `<a class="botao" href="${esc(cfg.suporte)}" target="_blank" rel="noopener">Falar com o suporte</a>` : ""}
           <button class="botao secundario" id="btn-sair">Sair</button>
-        </div>`;
+        </div>
+        ${instalado ? "" : `
+        <div class="card-texto tutorial">
+          <h2>📲 Dica: instale o app no celular!</h2>
+
+          <h3>🍎 iPhone</h3>
+          <p>Abra no Safari → Compartilhar → “Adicionar à Tela de Início”.</p>
+          <figure>
+            <img src="img/passo1.webp" alt="Toque nos três pontinhos ao lado do endereço" loading="lazy">
+            <figcaption><b>Passo 1:</b> toque nos três pontinhos (···) ao lado do endereço.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/passo2.webp" alt="Toque em Adicionar à Tela de Início" loading="lazy">
+            <figcaption><b>Passo 2:</b> toque em “Adicionar à Tela de Início”.</figcaption>
+          </figure>
+
+          <h3>🤖 Android</h3>
+          <p>Abra no Chrome → Toque nos três pontinhos (⋮) → “Instalar app” ou “Adicionar à tela inicial”.</p>
+
+          <p class="tutorial-fim">✅ Pronto! Acesse seus materiais com apenas um toque.</p>
+        </div>`}`;
     },
   };
 

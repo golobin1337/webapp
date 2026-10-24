@@ -244,3 +244,11 @@ body.deslogado { padding-bottom: 0; }
 @media (hover: none) { .car-btn { display: none; } }
 
 .pdf-icone.planilha { background: #e8f5e9; color: #1b5e20; }
+
+/* ---------- Tutorial de instalação (Perfil) ---------- */
+.tutorial h3 { margin: 18px 0 4px; font-size: 16px; }
+.tutorial p { margin: 4px 0; }
+.tutorial figure { margin: 12px 0 0; }
+.tutorial img { display: block; width: 100%; border-radius: 12px; border: 1px solid var(--borda); }
+.tutorial figcaption { font-size: 14px; color: var(--texto-suave); margin-top: 6px; }
+.tutorial-fim { margin-top: 18px !important; font-weight: 600; color: var(--verde); }

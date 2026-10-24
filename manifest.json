@@ -1,0 +1,12 @@
+{
+  "name": "CONGELA FÁCIL FIT",
+  "short_name": "Congela Fácil",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f4f6f4",
+  "theme_color": "#2e7d32",
+  "icons": [
+    { "src": "img/logo.jpg", "sizes": "1080x1080", "type": "image/jpeg", "purpose": "any" },
+    { "src": "img/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}

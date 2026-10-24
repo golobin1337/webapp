@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Painel</title>
+  <link rel="icon" href="img/logo.jpg">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin">
+  <header class="topbar">
+    <a href="./" class="logo" id="logo"></a>
+    <h1 class="topbar-title">Painel</h1>
+    <button class="icon-btn" id="btn-sair" aria-label="Sair" hidden>
+      <svg viewBox="0 0 24 24"><path d="M15 4h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-4M10 17l5-5-5-5M15 12H3"/></svg>
+    </button>
+  </header>
+  <nav class="abas" id="abas" hidden>
+    <button data-aba="alunos" class="ativo">Alunos</button>
+    <button data-aba="produtos">Produtos</button>
+    <button data-aba="avisos">Avisos</button>
+  </nav>
+  <main id="view"></main>
+  <div class="toast" id="toast"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+  <script src="config.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

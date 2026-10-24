@@ -1,0 +1,7 @@
+# Materiais pagos: ficam no Supabase, nunca no repositório nem no site
+produtos/
+*.pdf
+*.xlsx
+
+# Modo de teste
+demo/

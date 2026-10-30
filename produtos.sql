@@ -1,7 +1,7 @@
 -- =============================================================
 --  Cria os 16 produtos (vazios). Cole no Supabase → SQL Editor → Run.
 --  Pode rodar mais de uma vez: produtos com o mesmo nome não são duplicados.
---  Depois, no painel (/admin.html → Produtos), abra cada um e envie o PDF.
+--  Depois, no painel de admin (aba Produtos), abra cada um e envie o PDF.
 -- =============================================================
 
 insert into produtos (titulo, emoji, cor, descricao, ordem)

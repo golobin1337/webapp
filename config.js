@@ -1,7 +1,7 @@
 // =============================================================
 //  CONFIGURAÇÃO DO APP
 // =============================================================
-//  Produtos, PDFs e alunos você gerencia no painel: /admin.html
+//  Produtos, PDFs e alunos você gerencia no painel de admin.
 //  Aqui ficam só o visual e a conexão com o Supabase.
 // =============================================================
 

@@ -15,12 +15,14 @@
 
 ## 2. Publicar
 
-Arraste a pasta inteira em https://app.netlify.com/drop. Você recebe um link tipo `https://seu-app.netlify.app`.
+O app está publicado na Vercel a partir do GitHub (repositório privado).
+Cada envio para o GitHub atualiza o site sozinho.
 
-- **App do aluno:** `https://seu-app.netlify.app`
-- **Seu painel:** `https://seu-app.netlify.app/admin.html`
+- **App do aluno:** https://appreceitas-kappa.vercel.app
+- **Seu painel:** o arquivo `painel-….html` desta pasta. O endereço é de propósito
+  difícil de adivinhar — não divulgue e não coloque em arquivos públicos.
 
-Sempre que mudar algum arquivo daqui (ex: `config.js`), publique de novo.
+Sempre que mudar algum arquivo daqui (ex: `config.js`), envie para o GitHub.
 Produtos, PDFs e alunos **não** precisam republicar: é tudo pelo painel.
 
 ## 3. Usar o painel

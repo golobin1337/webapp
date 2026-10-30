@@ -1,0 +1,4 @@
+# Não publicar no site (documentação e scripts do banco)
+LEIAME.md
+*.sql
+.gitignore

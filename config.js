@@ -20,6 +20,7 @@ window.APP_CONFIG = {
   //   "https://..."  (site externo, ex: checkout)
   // "imagem" é opcional (ex: "img/banner1.jpg").
   banners: [
+    { imagem: "img/banner-natal.webp", cor: "#7f1d1d", link: "https://pay.wiapy.com/6SocIf06HcLO" }, // Receitas Natalinas R$ 14,90
     { imagem: "img/banner1.webp", cor: "#1b5e20", link: "#/" },
     { imagem: "img/banner2.webp", cor: "#1b5e20", link: "https://pay.wiapy.com/IzXj_WwQVL1X" }, // checkout do combo R$ 37,90
   ],

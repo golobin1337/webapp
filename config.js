@@ -22,7 +22,7 @@ window.APP_CONFIG = {
   banners: [
     { imagem: "img/banner-natal.webp", cor: "#7f1d1d", link: "https://pay.wiapy.com/6SocIf06HcLO" }, // Receitas Natalinas R$ 14,90
     { imagem: "img/banner-iogurte.webp", cor: "#86198f", link: "https://pay.wiapy.com/13G-FjH945hQ" }, // 200 Iogurtes Proteicos R$ 27,90
-    { imagem: "img/banner2.webp", cor: "#1b5e20", link: "https://pay.wiapy.com/IzXj_WwQVL1X" }, // checkout do combo R$ 37,90
+    { imagem: "img/banner2.webp", cor: "#1b5e20", link: "https://pay.wiapy.com/JGhLkvUF-u0" }, // checkout do combo R$ 37,90
   ],
 
   // Botão flutuante e "já comprei" (ex: WhatsApp). Deixe "" para esconder.
